@@ -33,7 +33,6 @@ function setAttributes(element, attributes) {
 function displayPhotos() {
     imagesLoaded = 0;
     totalImages = photosArray.length;
-    console.log("totalImages = ", totalImages);
     // Run function for every item in the array of photos
     photosArray.forEach((photo) => {
         // Create <a> to link to unsplash
