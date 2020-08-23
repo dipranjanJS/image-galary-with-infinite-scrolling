@@ -7,7 +7,7 @@ let totalImages = 0;
 let photosArray = [];
 
 // Unsplash API
-const count = 30;
+let count = 5; //To mload only 5 images first time
 const apiKey = 'i2iGUdbFLEdYfZn7HZd2YnfgE1d_T3qOrRSXU7WU1bY';
 const apiUrl =` https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
@@ -18,6 +18,7 @@ function imageLoaded() {
     if(imagesLoaded === totalImages) {
         ready = true;
         loader.hidden = true;
+        count = 30; // Change the number of images loaded to 30 after scroll
     }
 }
 
